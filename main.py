@@ -108,7 +108,6 @@ async def on_message(message):
             isCooldownActive = True
 
     # Check for booster role
-    # TODO: O(n) time, try and get this to O(1)
     if CHECK_BOOSTER_ROLE:
         isBooster = False
         for role in member.roles:
